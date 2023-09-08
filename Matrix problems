@@ -1,0 +1,17 @@
+1.Rotate image of matrix:
+
+
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [[7,4,1],[8,5,2],[9,6,3]]
+
+The code solution:
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrix = matrix[::-1]
+new = []
+for k in range(len(matrix[0])):
+    new_row = []
+    for row in matrix:
+        new_row.append(row[k])
+    new.append(new_row)
+
+print(new)
